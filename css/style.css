@@ -24,10 +24,6 @@ body{
     color:#111827;
 }
 
-/* ==========================================
-   COMMON
-========================================== */
-
 a{
     text-decoration:none;
 }
@@ -641,6 +637,20 @@ ul{
     color:#fff;
     transform:translateY(-3px);
 }
+.experience-header a.offer-letter-link{
+    background:#2563EB;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+}
+.experience-header a.offer-letter-link:hover{
+    background:#1d4ed8;
+}
 
 @media(max-width:768px){
 
@@ -696,6 +706,52 @@ ul{
 
     .experience-card p{
         font-size:15px;
+    }
+}
+
+/* ==========================================
+   EXPERIENCE LINKS
+========================================== */
+
+.experience-links{
+    margin-top:25px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.experience-links a{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 22px;
+    background:#2563EB;
+    color:#fff;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.experience-links a:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+.experience-links i{
+    font-size:17px;
+}
+
+@media(max-width:576px){
+
+    .experience-links{
+        width:100%;
+    }
+
+    .experience-links a{
+        width:100%;
+        justify-content:center;
     }
 }
 
@@ -782,7 +838,9 @@ ul{
     font-size:14px;
 }
 
-
+/* ==========================================
+   PROJECT LINKS
+========================================== */
 
 .project-links{
     display:flex;
@@ -796,20 +854,13 @@ ul{
     display:inline-flex;
     align-items:center;
     gap:8px;
-
     padding:12px 22px;
-
     border-radius:50px;
-
     text-decoration:none;
-
     font-size:15px;
     font-weight:600;
-
     transition:all .3s ease;
 }
-
-/* Live Demo */
 
 .project-links a:first-child{
     background:#2563EB;
@@ -820,8 +871,6 @@ ul{
     background:#1d4ed8;
     transform:translateY(-3px);
 }
-
-/* GitHub */
 
 .project-links a:last-child{
     border:2px solid #EF4444;
@@ -838,10 +887,6 @@ ul{
     font-size:16px;
 }
 
-/*==========================================
-            RESPONSIVE
-==========================================*/
-
 @media(max-width:576px){
 
     .project-links{
@@ -853,5 +898,4 @@ ul{
         justify-content:center;
         width:100%;
     }
-
 }
